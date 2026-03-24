@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <style>
+    
     /* ── HOME HERO ── */
     .hero {
       background: var(--bg-dark);
@@ -19,7 +20,6 @@
       gap: 48px;
       align-items: center;
     }
-    
     /* photo left */
     .hero-photo {
       width: 100%;
@@ -51,6 +51,23 @@
     .hero-social-link:hover { background: rgba(255,255,255,0.2); }
     .hero-social-link svg { width: 14px; height: 14px; fill: white; }
     .hero-bio { font-size: 15.5px; line-height: 1.82; color: rgba(255,255,255,0.72); }
+
+    /* ── AWARD LIST ── */
+    .award-detail {
+      font-size: 12.5px;
+      color: var(--text-light);
+      margin-top: 4px;
+      line-height: 1.6;
+      font-style: italic;
+    }
+    .edu-awards-list a {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      color: inherit;
+      opacity: 0.75;
+    }
+    .edu-awards-list a:hover { opacity: 1; }
+    
   </style>
 </head>
 <body>
@@ -104,6 +121,7 @@
     <div class="section-content">
       <div class="timeline reveal">
 
+        <!-- Leeds Beckett University -->
         <div class="timeline-item">
           <div class="timeline-dot">
             <!-- graduation cap line-art -->
@@ -135,9 +153,10 @@
               <p><strong>Managing Financial Resources:</strong> financial reporting, ratio analysis, cost-volume-profit analysis, budgeting, investment appraisal (NPV, IRR)</p>
               <p><strong>Risk Management:</strong> ERM, risk assessment matrices, ISO 31000 risk framework, operational and strategic risk, supply chain risk</p>
             </div>
-          </div>
-        </div>
+          </div> <!-- class="timeline-card" -->
+        </div> <!-- class="timeline-item" -->
 
+        <!-- Miami University Master -->
         <div class="timeline-item">
           <div class="timeline-dot">
             <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3.33 1.67 8.67 1.67 12 0v-5"/></svg>
@@ -162,7 +181,6 @@
               View coursework
             </button>
             <div class="coursework-panel">
-              <!-- <div class="cw-subhead">Relevant Coursework</div> -->
               <p><strong>Data Warehousing and Business Intelligence (BI):</strong> data warehouse architecture, ETL processes, dimensional modeling (star/snowflake schema), BI tools</p>
               <p><strong>Big Data:</strong> large-scale data integration, distributed computing, Python/SQL pipelines, feature engineering</p>
               <p><strong>Data Mining in Business:</strong> classification, clustering, model evaluation, SMOTE, cross-validation</p>
@@ -173,9 +191,10 @@
               <p><strong>Systems Modeling and Optimization:</strong> linear programming, decision modeling, sensitivity analysis</p>
               <p><strong>Prescriptive Analytics:</strong> optimization modeling, decision support systems, simulation</p>
             </div>
-          </div>
-        </div>
+          </div> <!-- class="timeline-card" -->
+        </div> <!-- class="timeline-item" -->
 
+        <!-- Miami University Bachelor -->
         <div class="timeline-item">
           <div class="timeline-dot">
             <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3.33 1.67 8.67 1.67 12 0v-5"/></svg>
@@ -201,7 +220,6 @@
               View coursework
             </button>
             <div class="coursework-panel">
-              <!-- <div class="cw-subhead">Relevant Coursework</div> -->
               <p><strong>Programming Foundations:</strong> OOP, Java, data abstraction, data structures, web application programming, algorithmic thinking</p>
               <p><strong>Database Systems:</strong> relational databases, SQL, schema design, query optimization</p>
               <p><strong>Statistical Programming:</strong> R/SAS, Monte Carlo simulation, randomization tests, statistical computing</p>
@@ -215,12 +233,136 @@
               <p><strong>Economics:</strong> applied econometrics, micro/macro-economics, market structures, fiscal/monetary policy</p>
               <p><strong>Financial Accounting:</strong> financial statements, cost analysis, managerial decision-support</p>
             </div>
-          </div>
-        </div>
+          </div> <!-- class="timeline-card" -->
+        </div> <!-- class="timeline-item" -->
 
-      </div>
-    </div>
-  </div>
+        <!-- Foreign Trade University -->
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3.33 1.67 8.67 1.67 12 0v-5"/></svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-card-title">Exchange Student (International Program)</div>
+              <div class="timeline-card-date">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                August 2020 – December 2020
+              </div>
+            </div>
+            <span class="timeline-card-org">Foreign Trade University (Campus II), Ho Chi Minh City, Vietnam</span>
+            <ul class="edu-awards-list">
+              <li>Participated in a Miami University exchange program at Foreign Trade University (FTU), Campus II, during the COVID-19 pandemic.</li>
+            </ul>
+            <button class="coursework-toggle" onclick="toggleCard(this)">
+              <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
+              View details
+            </button>
+            <div class="coursework-panel">
+              <p>Completed in-person <strong>Microeconomics</strong> and <strong>Macroeconomics</strong> coursework at FTU alongside full-time online study at Miami University</p>
+              <p>
+                <strong>Activity:</strong> Guest Speaker at at workshop "Studying Abroad Experiences: How to Navigate International Education."
+                <a href="leadership.html#guest-speaker" style="display: inline-block; margin-left: 8px; font-size: 12px; color: var(--text-light); text-decoration: underline; white-space: nowrap;">
+                  View on Leadership page →
+                </a>
+              </p>
+            </div> <!-- class="coursework-panel" -->
+          </div> <!-- class="timeline-card" -->
+        </div> <!-- class="timeline-item" -->
+
+        <!-- Hanoi-Amsterdam High School for the Gifted -->
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3.33 1.67 8.67 1.67 12 0v-5"/></svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-card-title">High School Diploma</div>
+              <div class="timeline-card-date">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                August 2017 – May 2020
+              </div>
+            </div>
+            <span class="timeline-card-org">Hanoi-Amsterdam High School for the Gifted, Hanoi, Vietnam</span>
+            <ul class="edu-awards-list">
+              <li>Specialization: Mathematics</li>
+            </ul>
+            <button class="coursework-toggle" onclick="toggleCard(this)">
+              <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
+              View awards
+            </button>
+            <div class="coursework-panel">
+              <ul class="edu-awards-list">
+                <li><strong>Third Prize</strong> — Hanoi Municipal Selection Examination for Gifted High School Students, Hanoi, Vietnam (March 2020)</li>
+                <li>
+                  <strong>Consolation Prize</strong> — <a href="https://www.facebook.com/toanmohinh.hanoi/" target="_blank">Math Modelling Competition</a>, organized by Vietnam Society for Applications of Mathematics, Hanoi, Vietnam (August 2019)
+                  <div class="award-detail">3-day annual competition for 25 teams (100 participants) from Hanoi to solve real-life problems using math models.</div>
+                </li>
+                <li>
+                  <strong>Honorable Mention</strong> — <a href="https://www.immchallenge.org/Index.html" target="_blank">5th International Mathematical Modeling Challenge (IM<sup>2</sup>C)</a>, organized by COMAP and NeoUnion ESC Organization, Remote (March–May 2019)
+                  <div class="award-detail">Represented Vietnam as part of a 4-member team; problem topic: Earth's Carrying Capacity. 57 teams from 33 countries/regions competed in the international round.</div>
+                </li>
+                <li>
+                  <strong>Silver Medal</strong> — <a href="https://www.facebook.com/InternationalTalentMathematicsContest" target="_blank">International Talent Mathematics Contest (ITMC)</a>, Bangkok, Thailand (February 2019)
+                  <div class="award-detail">Nearly 1,000 students from 10 countries participated.</div>
+                </li>
+                <li>
+                  <strong>3rd Place</strong> — Winter Round, 6th International Tournament Mathematics Without Borders, Bulgaria — Remote (February 2019)
+                  <div class="award-detail">Mathematics competition for students from grade 6 to 12 with 4 rounds (Spring, Summer, Autumn, Winter). 250 participants from all age groups attended the Winter round.</div>
+                </li>
+                <li><strong>Third Prize</strong> — Hanoi Municipal Selection Examination for Gifted High School Students, Hanoi, Vietnam (December 2018)</li>
+                <li>
+                  <strong>Ams Ambassador</strong> — <a href="https://hn-ams.edu.vn/content/tan-ai-su-ams-2018-vu-nam-trang-linh-nu-sinh-chuyen-toan-xinh-ep-va-tai-nang" target="_blank">Hanoi–Amsterdam High School for the Gifted</a>, Hanoi, Vietnam (2018)
+                  <div class="award-detail">Selected through the annual <a href="https://www.facebook.com/ngayhoianhtai18/" target="_blank">Ngày Hội Anh Tài (Talent Showcase)</a> competition — 4 competitive rounds (application, interview, talent showcase, finale) based on academic, talent, and extracurricular achievements. Recognized as a representative for over 2,000 students of the school.</div>
+                </li>
+                <li>
+                  <strong>Gold Award</strong> — <a href="https://www.facebook.com/SGYouthAmbassadors" target="_blank">Asia Student Leadership Conference (ASLC)</a>, organized by Youth Ambassadors and <a href="https://www.nyc.gov.sg" target="_blank">National Youth Council (NYC) Singapore</a>, Singapore (July 2018)
+                  <div class="award-detail">Annual conference attracting 260 participants from 10 countries across Asia.</div>
+                </li>
+              </ul> <!-- class="edu-awards-list" -->
+            </div> <!-- class="coursework-panel" -->
+          </div> <!-- class="timeline-card" -->
+        </div> <!-- class="timeline-item" -->
+
+        <!-- Archimedes Academy Secondary School -->
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3.33 1.67 8.67 1.67 12 0v-5"/></svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-card-title">Secondary School Diploma</div>
+              <div class="timeline-card-date">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                August 2017 – May 2020
+              </div>
+            </div>
+            <span class="timeline-card-org">Archimedes Academy Secondary School, Hanoi, Vietnam</span>
+            <!--
+            <ul class="edu-awards-list">
+              <li></li>
+            </ul>
+            -->
+            <button class="coursework-toggle" onclick="toggleCard(this)">
+              <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
+              View awards
+            </button>
+            <div class="coursework-panel">
+              <ul class="edu-awards-list">
+                <li>
+                  <strong>Second Prize</strong> — Hanoi Municipal Academic Competition for Gifted Grade 9 Students, Mathematics — Hanoi, Vietnam (2017)
+                  <div class="award-detail">Grade 9 students in Hanoi competed in one of 13 subjects including Math, Literature, History, Chemistry, and Physics. 166 students competed in the Mathematics section.</div>
+                </li>
+                <li><strong>Silver Medal</strong> — <a href="https://cmseducation.org/iymc/" target="_blank">International Young Mathematicians' Convention (IYMC)</a>, India (2016)</li>
+                <li><strong>Bronze Medal</strong> — Hanoi Open Mathematics Competition (HOMC), Hanoi, Vietnam (2016)</li>
+                <li><strong>Gold Medal</strong> — International Mathematics Contest (IMC), Singapore (2015)</li>
+              </ul> <!-- class="edu-awards-list" -->
+            </div> <!-- class="coursework-panel" -->
+          </div> <!-- class="timeline-card" -->
+        </div> <!-- class="timeline-item" -->
+
+      </div> <!-- class="timeline reveal" -->
+    </div> <!-- class="section-content" -->
+  </div> <!-- class="section-inner" -->
 </section>
 
 <!-- SKILLS -->
