@@ -90,7 +90,7 @@ nav a.active { color: white; border-bottom-color: rgba(255,255,255,0.45); }
   content: '';
   position: absolute;
   left: var(--line-left);
-  top: -5px;   /* extend well above first dot for visual breathing room */
+  top: 0;   /* extend well above first dot for visual breathing room */
   bottom: 0;
   width: 2px;
   background: var(--bg-dark);
