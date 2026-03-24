@@ -211,9 +211,9 @@ nav a.active { color: white; border-bottom-color: rgba(255,255,255,0.45); }
 .experience-panel.open { display: block; animation: dropIn 0.2s ease; }
 @keyframes dropIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: none; } }
 .experience-panel p { margin-bottom: 6px; font-size: 14px; font-style: italic; }
-.experience-panel ul { padding-left: 18px; }
-.experience-panel li { font-size: 14px; line-height: 1.65; margin-bottom: 6px; }
-.experience-panel li:last-child { margin-bottom: 0; }
+.experience-panel-bullets { padding-left: 18px; }
+.experience-panel-bullets li { font-size: 14px; line-height: 1.65; margin-bottom: 6px; }
+.experience-panel-bullets li:last-child { margin-bottom: 0; }
 
 /* ══ SKILLS ══ */
 .skills-two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 60px; }
