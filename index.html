@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <style>
-    
     /* ── HOME HERO ── */
     .hero {
       background: var(--bg-dark);
@@ -51,23 +50,6 @@
     .hero-social-link:hover { background: rgba(255,255,255,0.2); }
     .hero-social-link svg { width: 14px; height: 14px; fill: white; }
     .hero-bio { font-size: 15.5px; line-height: 1.82; color: rgba(255,255,255,0.72); }
-
-    /* ── AWARD LIST ── */
-    .award-detail {
-      font-size: 12.5px;
-      color: var(--text-light);
-      margin-top: 4px;
-      line-height: 1.6;
-      font-style: italic;
-    }
-    .edu-awards-list a {
-      text-decoration: underline;
-      text-underline-offset: 2px;
-      color: inherit;
-      opacity: 0.75;
-    }
-    .edu-awards-list a:hover { opacity: 1; }
-    
   </style>
 </head>
 <body>
@@ -132,19 +114,21 @@
               <div class="timeline-card-title">Master of Science in Management</div>
               <div class="timeline-card-date">
                 <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-                January 2025 – <em>(Expected)</em> May 2026
+                January 2025 – (Expected) May 2026
               </div>
-            </div>
+            </div> <!-- class="timeline-card-header" -->
             <span class="timeline-card-org">Leeds Beckett University, United Kingdom</span>
-            <div class="edu-meta">Dean's Postgraduate Scholarship (2025 – 2026)</div>
-            <button class="coursework-toggle" onclick="toggleCard(this)">
+            <ul class="timeline-card-edu-scholarship">
+              <li>Dean's Postgraduate Scholarship (2025 – 2026)</li>
+            </ul>
+            <button class="timeline-card-toggle" onclick="toggleCard(this)">
               <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
               View coursework
             </button>
-            <div class="coursework-panel">
-              <div class="cw-subhead">Dissertation</div>
+            <div class="edu-panel">
+              <div class="edu-panel-subhead">Dissertation</div>
               <p><strong>"University-Industry Collaboration and Student Entrepreneurial Mindset Development in Vietnam"</strong> — semi-structured interviews, thematic analysis, strategic management theory, higher education policy, human capital development, entrepreneurship education</p>
-              <div class="cw-subhead">Coursework</div>
+              <div class="edu-panel-subhead">Coursework</div>
               <p><strong>Corporate Strategy:</strong> portfolio analysis, digital transformation strategy, strategic change management</p>
               <p><strong>Operations and Logistics Management:</strong> supply chain design, digital supply chain resilience, Industry 4.0 (IoT, RFID, ERP/SAP), lean/agile/JIT, sustainability in operations</p>
               <p><strong>Contemporary Marketing:</strong> digital marketing strategy, omnichannel strategy, market segmentation, CRM, consumer behavior, customer lifecycle</p>
@@ -167,18 +151,18 @@
                 <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                 August 2023 – May 2024
               </div>
-            </div>
+            </div> <!-- class="timeline-card-header" -->
             <span class="timeline-card-org">Miami University, United States of America</span>
-            <ul class="edu-awards-list">
+            <ul class="timeline-card-edu-scholarship">
               <li>Dean's List (Fall 2023)</li>
               <li>International Education Scholarship (2023 – 2024)</li>
               <li>RedHawk Excellence Scholarship (2023 – 2024)</li>
             </ul>
-            <button class="coursework-toggle" onclick="toggleCard(this)">
+            <button class="timeline-card-toggle" onclick="toggleCard(this)">
               <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
               View coursework
             </button>
-            <div class="coursework-panel">
+            <div class="edu-panel">
               <p><strong>Data Warehousing and Business Intelligence (BI):</strong> data warehouse architecture, ETL processes, dimensional modeling (star/snowflake schema), BI tools</p>
               <p><strong>Big Data:</strong> large-scale data integration, distributed computing, Python/SQL pipelines, feature engineering</p>
               <p><strong>Data Mining in Business:</strong> classification, clustering, model evaluation, SMOTE, cross-validation</p>
@@ -204,19 +188,19 @@
                 <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                 August 2020 – January 2024
               </div>
-            </div>
+            </div> <!-- class="timeline-card-header" -->
             <span class="timeline-card-org">Miami University, United States of America</span>
-            <ul class="edu-awards-list">
+            <ul class="timeline-card-edu-scholarship">
               <li>Dean's List (Spring 2022)</li>
               <li>International Education Scholarship (2020 – 2024)</li>
               <li>RedHawk Excellence Scholarship (2020 – 2024)</li>
               <li>English Composition Award (2021): Essay <em>"Ancestor Worship in Asian Culture: Cultural Belief or Superstition?"</em> published in <em>Rhethawks</em>, the official writing handbook of the Department of English.</li>
             </ul>
-            <button class="coursework-toggle" onclick="toggleCard(this)">
+            <button class="timeline-card-toggle" onclick="toggleCard(this)">
               <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
               View coursework
             </button>
-            <div class="coursework-panel">
+            <div class="edu-panel">
               <p><strong>Programming Foundations:</strong> OOP, Java, data abstraction, data structures, web application programming, algorithmic thinking</p>
               <p><strong>Database Systems:</strong> relational databases, SQL, schema design, query optimization</p>
               <p><strong>Statistical Programming:</strong> R/SAS, Monte Carlo simulation, randomization tests, statistical computing</p>
@@ -245,24 +229,20 @@
                 <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                 August 2020 – December 2020
               </div>
-            </div>
+            </div> <!-- class="timeline-card-header" -->
             <span class="timeline-card-org">Foreign Trade University (Campus II), Ho Chi Minh City, Vietnam</span>
-            <ul class="edu-awards-list">
-              <li>Participated in a Miami University exchange program at Foreign Trade University (FTU), Campus II, during the COVID-19 pandemic.</li>
-            </ul>
-            <button class="coursework-toggle" onclick="toggleCard(this)">
+            <button class="timeline-card-toggle" onclick="toggleCard(this)">
               <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
               View details
             </button>
-            <div class="coursework-panel">
+            <div class="edu-panel">
+              <p>Participated in a Miami University exchange program at Foreign Trade University (FTU), Campus II, during the COVID-19 pandemic.</p>
               <p>Completed in-person <strong>Microeconomics</strong> and <strong>Macroeconomics</strong> coursework at FTU alongside full-time online study at Miami University</p>
               <p>
                 <strong>Activity:</strong> Guest Speaker at at workshop "Studying Abroad Experiences: How to Navigate International Education."
-                <a href="leadership.html#guest-speaker" style="display: inline-block; margin-left: 8px; font-size: 12px; color: var(--text-light); text-decoration: underline; white-space: nowrap;">
-                  View on Leadership page →
-                </a>
+                <a href="leadership.html#guest-speaker" style="display: inline-block; margin-left: 8px; font-size: 12px; color: var(--text-light); text-decoration: underline; white-space: nowrap;">View on Leadership page →</a>
               </p>
-            </div> <!-- class="coursework-panel" -->
+            </div>
           </div> <!-- class="timeline-card" -->
         </div> <!-- class="timeline-item" -->
 
@@ -278,45 +258,73 @@
                 <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                 August 2017 – May 2020
               </div>
-            </div>
+            </div> <!-- class="timeline-card-header" -->
             <span class="timeline-card-org">Hanoi-Amsterdam High School for the Gifted, Hanoi, Vietnam</span>
-            <ul class="edu-awards-list">
+            <ul class="timeline-card-edu-scholarship">
               <li>Specialization: Mathematics</li>
             </ul>
-            <button class="coursework-toggle" onclick="toggleCard(this)">
+            <button class="timeline-card-toggle" onclick="toggleCard(this)">
               <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
               View awards
             </button>
-            <div class="coursework-panel">
-              <ul class="edu-awards-list">
-                <li><strong>Third Prize</strong> — Hanoi Municipal Selection Examination for Gifted High School Students, Hanoi, Vietnam (March 2020)</li>
+            <div class="edu-panel">
+              <ul class="award-list">
                 <li>
-                  <strong>Consolation Prize</strong> — <a href="https://www.facebook.com/toanmohinh.hanoi/" target="_blank">Math Modelling Competition</a>, organized by Vietnam Society for Applications of Mathematics, Hanoi, Vietnam (August 2019)
-                  <div class="award-detail">3-day annual competition for 25 teams (100 participants) from Hanoi to solve real-life problems using math models.</div>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Third Prize</strong>, Hanoi Municipal Selection Examination for Gifted High School Students</div>
+                    <div class="award-item-date">March 2020</div>
+                  </div>
                 </li>
                 <li>
-                  <strong>Honorable Mention</strong> — <a href="https://www.immchallenge.org/Index.html" target="_blank">5th International Mathematical Modeling Challenge (IM<sup>2</sup>C)</a>, organized by COMAP and NeoUnion ESC Organization, Remote (March–May 2019)
-                  <div class="award-detail">Represented Vietnam as part of a 4-member team; problem topic: Earth's Carrying Capacity. 57 teams from 33 countries/regions competed in the international round.</div>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Consolation Prize</strong>, <a href="https://www.facebook.com/toanmohinh.hanoi/" target="_blank">Math Modelling Competition</a></div>
+                    <div class="award-item-date">August 2019</div>
+                  </div>
+                  <div class="award-item-detail">This 3-day annually competition was organized by Vietnam Society for Applications of Mathematics for 25 teams (100 participants) from Hanoi, Vietnam to solve real-life problems using math models.</div>
                 </li>
                 <li>
-                  <strong>Silver Medal</strong> — <a href="https://www.facebook.com/InternationalTalentMathematicsContest" target="_blank">International Talent Mathematics Contest (ITMC)</a>, Bangkok, Thailand (February 2019)
-                  <div class="award-detail">Nearly 1,000 students from 10 countries participated.</div>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Honorable Mention</strong>, <a href="https://www.immchallenge.org/Index.html" target="_blank">5th International Mathematical Modeling Challenge (IM<sup>2</sup>C)</a></div>
+                    <div class="award-item-date">March – May 2019</div>
+                  </div>
+                  <div class="award-item-detail">The competition was organized by the Consortium for Mathematics and Its Applications (COMAP), a not-for-profit company dedicated to the improvement of mathematics education, and NeoUnion ESC Organization in Hong Kong (SAR). Problem topic: "Earth's Carrying Capacity". 57 teams from 33 countries/regions competed in the international round.</div>
                 </li>
                 <li>
-                  <strong>3rd Place</strong> — Winter Round, 6th International Tournament Mathematics Without Borders, Bulgaria — Remote (February 2019)
-                  <div class="award-detail">Mathematics competition for students from grade 6 to 12 with 4 rounds (Spring, Summer, Autumn, Winter). 250 participants from all age groups attended the Winter round.</div>
-                </li>
-                <li><strong>Third Prize</strong> — Hanoi Municipal Selection Examination for Gifted High School Students, Hanoi, Vietnam (December 2018)</li>
-                <li>
-                  <strong>Ams Ambassador</strong> — <a href="https://hn-ams.edu.vn/content/tan-ai-su-ams-2018-vu-nam-trang-linh-nu-sinh-chuyen-toan-xinh-ep-va-tai-nang" target="_blank">Hanoi–Amsterdam High School for the Gifted</a>, Hanoi, Vietnam (2018)
-                  <div class="award-detail">Selected through the annual <a href="https://www.facebook.com/ngayhoianhtai18/" target="_blank">Ngày Hội Anh Tài (Talent Showcase)</a> competition — 4 competitive rounds (application, interview, talent showcase, finale) based on academic, talent, and extracurricular achievements. Recognized as a representative for over 2,000 students of the school.</div>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Silver Medal</strong>, <a href="https://www.facebook.com/InternationalTalentMathematicsContest" target="_blank">International Talent Mathematics Contest (ITMC)</a>, Bangkok, Thailand</div>
+                    <div class="award-item-date">February 2019</div>
+                  </div>
+                  <div class="award-item-detail">Nearly 1,000 students from 10 countries participated.</div>
                 </li>
                 <li>
-                  <strong>Gold Award</strong> — <a href="https://www.facebook.com/SGYouthAmbassadors" target="_blank">Asia Student Leadership Conference (ASLC)</a>, organized by Youth Ambassadors and <a href="https://www.nyc.gov.sg" target="_blank">National Youth Council (NYC) Singapore</a>, Singapore (July 2018)
-                  <div class="award-detail">Annual conference attracting 260 participants from 10 countries across Asia.</div>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>3rd Place Winner</strong>, Winter Round of 6th International Tournament Mathematics Without Borders</div>
+                    <div class="award-item-date">February 2019</div>
+                  </div>
+                  <div class="award-item-detail">Mathematics competition for students from grade 6 to 12 with 4 rounds (Spring, Summer, Autumn, Winter). 250 participants from all age groups attended the Winter round.</div>
                 </li>
-              </ul> <!-- class="edu-awards-list" -->
-            </div> <!-- class="coursework-panel" -->
+                <li>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Third Prize</strong>, Hanoi Municipal Selection Examination for Gifted High School Students</div>
+                    <div class="award-item-date">December 2018</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Ams Ambassador</strong>, <a href="https://hn-ams.edu.vn/content/tan-ai-su-ams-2018-vu-nam-trang-linh-nu-sinh-chuyen-toan-xinh-ep-va-tai-nang" target="_blank">Hanoi–Amsterdam High School for the Gifted</a>, Hanoi, Vietnam</div>
+                    <div class="award-item-date">2018 – 2019</div>
+                  </div>
+                  <div class="award-item-detail"><a href="https://www.facebook.com/ngayhoianhtai18/" target="_blank">Ngày Hội Anh Tài (Talent Showcase)</a> is an annual student event series running from March to September. I was selected as the school's student ambassador based on academic excellence, personal talent, and extracurricular achievements across 5 rounds: application form, interview, professional photoshoot and public voting on social media, talent showcase, and a grand finale stage performance (including formal evening wear, traditional costume presentation, and a Q&A segment for the top 3 finalists). based on academic, talent, and extracurricular achievements.</div>
+                </li>
+                <li>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Gold Award</strong>, Asia Student Leadership Conference (ASLC), Singapore</div>
+                    <div class="award-item-date">July 2018</div>
+                  </div>
+                  <div class="award-item-detail">The annual conference was organized by <a href="https://www.facebook.com/SGYouthAmbassadors" target="_blank">Youth Ambassadors</a> and <a href="https://www.nyc.gov.sg" target="_blank">National Youth Council (NYC) Singapore</a>, attracting 260 participants from 10 countries across Asia in 2018.</div>
+                </li>
+              </ul> <!-- class="award-list" -->
+            </div> <!-- class="edu-panel" -->
           </div> <!-- class="timeline-card" -->
         </div> <!-- class="timeline-item" -->
 
@@ -332,35 +340,48 @@
                 <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                 August 2017 – May 2020
               </div>
-            </div>
+            </div> <!-- class="timeline-card-header" -->
             <span class="timeline-card-org">Archimedes Academy Secondary School, Hanoi, Vietnam</span>
-            <!--
-            <ul class="edu-awards-list">
-              <li></li>
-            </ul>
-            -->
-            <button class="coursework-toggle" onclick="toggleCard(this)">
+            <button class="timeline-card-toggle" onclick="toggleCard(this)">
               <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
               View awards
             </button>
-            <div class="coursework-panel">
-              <ul class="edu-awards-list">
+            <div class="edu-panel">
+              <ul class="award-list">
                 <li>
-                  <strong>Second Prize</strong> — Hanoi Municipal Academic Competition for Gifted Grade 9 Students, Mathematics — Hanoi, Vietnam (2017)
-                  <div class="award-detail">Grade 9 students in Hanoi competed in one of 13 subjects including Math, Literature, History, Chemistry, and Physics. 166 students competed in the Mathematics section.</div>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Second Prize</strong>, Hanoi Municipal Academic Competition for Gifted Grade 9 Students (Subject: Mathematics)</div>
+                    <div class="award-item-date">May 2017</div>
+                  </div>
+                  <div class="award-item-detail">Grade 9 students in Hanoi competed in one of 13 subjects including Math, Literature, History, Chemistry, and Physics. There were 166 students competed in the Mathematics section in academic year 2016 – 2017.</div>
                 </li>
-                <li><strong>Silver Medal</strong> — <a href="https://cmseducation.org/iymc/" target="_blank">International Young Mathematicians' Convention (IYMC)</a>, India (2016)</li>
-                <li><strong>Bronze Medal</strong> — Hanoi Open Mathematics Competition (HOMC), Hanoi, Vietnam (2016)</li>
-                <li><strong>Gold Medal</strong> — International Mathematics Contest (IMC), Singapore (2015)</li>
-              </ul> <!-- class="edu-awards-list" -->
-            </div> <!-- class="coursework-panel" -->
+                <li>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Silver Medal</strong>, <a href="https://cmseducation.org/iymc/" target="_blank">International Young Mathematicians' Convention (IYMC)</a>, India</div>
+                    <div class="award-item-date">2016</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Bronze Medal</strong>, Hanoi Open Mathematics Competition (HOMC)</div>
+                    <div class="award-item-date">2016</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Gold Medal</strong>, International Mathematics Contest (IMC), Singapore</div>
+                    <div class="award-item-date">2015</div>
+                  </div>
+                </li>
+              </ul> <!-- class="award-list" -->
+            </div> <!-- class="edu-panel" -->
           </div> <!-- class="timeline-card" -->
         </div> <!-- class="timeline-item" -->
 
       </div> <!-- class="timeline reveal" -->
     </div> <!-- class="section-content" -->
   </div> <!-- class="section-inner" -->
-</section>
+</section> <!-- end of EDUCATION section -->
 
 <!-- SKILLS -->
 <section class="section" id="skills">
@@ -388,7 +409,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> <!-- end of SKILLS section -->
 
 <!-- LANGUAGES -->
 <section class="section" id="languages">
@@ -411,7 +432,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> <!-- end of LANGUAGES section -->
 
 <!-- FOOTER -->
 <footer class="footer" id="connect">
