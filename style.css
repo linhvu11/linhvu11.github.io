@@ -184,6 +184,38 @@ nav a.active { color: white; border-bottom-color: rgba(255,255,255,0.45); }
 .edu-panel p { margin-bottom: 6px; font-size: 14px; }
 .edu-panel p:last-child { margin-bottom: 0; }
 
+/* For AWARDS */
+.award-list { list-style: none; font-size: 14px; /* padding: 2px 0; */ }
+.award-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 4px 0;
+}
+.award-item-left { flex: 1; min-width: 0; }
+.award-item-date {
+  font-size: 13px;
+  color: var(--text-light);
+  white-space: nowrap;
+  flex-shrink: 0;
+  padding-top: 1px;
+}
+.award-item-detail {
+  font-size: 12.5px;
+  color: var(--text-light);
+  margin-top: 4px;
+  line-height: 1.6;
+  font-style: italic;
+}
+.award-list a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: inherit;
+  opacity: 0.75;
+}
+.award-list a:hover { opacity: 1; }
+
 /* ══ EXPERIENCE dropdown panel ══ */
 .experience-panel {
   display: none; margin-top: 14px; padding: 16px 18px;
@@ -312,6 +344,8 @@ nav a.active { color: white; border-bottom-color: rgba(255,255,255,0.45); }
   .lang-list { gap: 32px; }
   .timeline-card-header { flex-direction: column; gap: 4px; }
   .timeline-card-date { font-size: 12px; }
+  .award-item { flex-direction: column; gap: 2px; }
+  .award-item-date { font-size: 12px; }
 }
 
 /* ══ PRINT ══ */
