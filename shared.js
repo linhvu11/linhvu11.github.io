@@ -51,3 +51,15 @@ function toggleCard(btn) {
   btn.classList.toggle('open', !isOpen);
   panel.classList.toggle('open', !isOpen);
 }
+
+// Language switcher
+function toggleLangMenu(btn) {
+  const menu = btn.nextElementSibling;
+  menu.classList.toggle('open');
+}
+document.addEventListener('click', e => {
+  if (!e.target.closest('.lang-switcher')) {
+    document.querySelectorAll('.lang-menu.open')
+      .forEach(m => m.classList.remove('open'));
+  }
+});
