@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linh Vu | Trang cá nhân</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .hero {
+      background: var(--bg-dark);
+      color: white;
+      padding: calc(var(--nav-h) + 48px) var(--page-pad) 60px;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .hero-photo {
+      width: 100%;
+      max-width: 280px;
+      aspect-ratio: 3/4;
+      overflow: hidden;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+    .hero-photo img {
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center top;
+    }
+    .hero-right-content { display: flex; flex-direction: column; }
+    .hero-name {
+      font-family: var(--serif); font-size: clamp(2.6rem, 4vw, 3.8rem);
+      font-weight: 400; line-height: 1.0; margin-bottom: 6px;
+      letter-spacing: -0.02em;
+    }
+    .hero-name em { font-style: italic; }
+    .hero-pronoun { font-size: 13px; color: rgba(255,255,255,0.4); margin-bottom: 20px; letter-spacing: 0.04em; }
+    .hero-socials { display: flex; gap: 8px; margin-bottom: 28px; flex-wrap: wrap; }
+    .hero-social-link {
+      width: 34px; height: 34px; border-radius: 50%;
+      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+      display: flex; align-items: center; justify-content: center; transition: background 0.2s;
+    }
+    .hero-social-link:hover { background: rgba(255,255,255,0.2); }
+    .hero-social-link svg { width: 14px; height: 14px; fill: white; }
+    .hero-bio { font-size: 15.5px; line-height: 1.82; color: rgba(255,255,255,0.72); }
+  </style>
+</head>
+<body>
+
+<nav>
+<div class="nav-links">
+    <a href="vi_index.html" class="active">Trang chủ</a>
+    <a href="vi_projects.html">Dự án</a>
+    <a href="vi_experience.html">Kinh nghiệm</a>
+    <a href="vi_leadership.html">Lãnh đạo</a>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-photo">
+    <img src="images/linh.jpeg" alt="Linh Vu" />
+  </div>
+  <div class="hero-right-content">
+    <h1 class="hero-name">Linh Vu</h1>
+    <div class="hero-pronoun">cô ấy/she/her</div>
+    <div class="hero-socials">
+      <a href="mailto:linh.nt.vuu@gmail.com" class="hero-social-link" title="Email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/linhvu11/" target="_blank" class="hero-social-link" title="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="https://www.facebook.com/linhbong115" target="_blank" class="hero-social-link" title="Facebook">
+        <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      </a>
+      <a href="https://medium.com/@linhvu.nt" target="_blank" class="hero-social-link" title="Medium">
+        <svg viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+      </a>
+      <a href="https://github.com/linhvu11" target="_blank" class="hero-social-link" title="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+    </div>
+    <p class="hero-bio">
+      Tôi có niềm đam mê với giáo dục, phát triển thanh thiếu niên và kết nối các phương pháp phân tích với những vấn đề kinh doanh thực tiễn. Mục tiêu của tôi là đóng góp vào cả nghiên cứu lẫn giảng dạy tại giao điểm của phân tích kinh doanh, chuyển đổi số, và ứng dụng trí tuệ nhân tạo cùng học máy.
+      <br><br>
+      Tôi đang tích cực tìm kiếm cơ hội nghiên cứu sinh Tiến sĩ trong các lĩnh vực Hệ thống thông tin, Kinh doanh, Quản trị và các lĩnh vực liên quan. Trong thời gian này, tôi làm gia sư tự do và cố vấn/tư vấn học thuật cho học sinh từ bậc phổ thông đến đại học.
+    </p>
+  </div>
+</section>
+
+<!-- HỌC VẤN -->
+<section class="section" id="education">
+  <div class="section-inner">
+    <div class="section-label-wrap reveal"><div class="section-label">Học vấn</div></div>
+    <div class="section-content">
+      <div class="timeline reveal">
+
+        <!-- Leeds Beckett -->
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3.33 1.67 8.67 1.67 12 0v-5"/></svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-card-title">Thạc sĩ Quản trị</div>
+              <div class="timeline-card-date">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Tháng 01/2025 – (Dự kiến) Tháng 05/2026
+              </div>
+            </div>
+            <span class="timeline-card-org">Đại học Leeds Beckett, Vương quốc Anh</span>
+            <ul class="timeline-card-edu-scholarship">
+              <li>Học bổng Sau đại học của Hiệu trưởng – Dean's Postgraduate Scholarship (2025 – 2026)</li>
+            </ul>
+            <button class="timeline-card-toggle" onclick="toggleCard(this)">
+              <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
+              Xem các môn học
+            </button>
+            <div class="edu-panel">
+              <div class="edu-panel-subhead">Luận văn</div>
+              <p><strong>"Hợp tác giữa Đại học – Doanh nghiệp và Phát triển Tư duy Khởi nghiệp của Sinh viên tại Việt Nam"</strong> — phỏng vấn bán cấu trúc, phân tích chủ đề, lý thuyết quản lý chiến lược, chính sách giáo dục đại học, phát triển vốn nhân lực, giáo dục khởi nghiệp</p>
+              <div class="edu-panel-subhead">Các môn học</div>
+              <p><strong>Chiến lược Doanh nghiệp:</strong> phân tích danh mục, chiến lược chuyển đổi số, quản lý thay đổi chiến lược</p>
+              <p><strong>Quản lý Vận hành và Logistics:</strong> thiết kế chuỗi cung ứng, khả năng phục hồi chuỗi cung ứng số, Công nghiệp 4.0 (IoT, RFID, ERP/SAP), lean/agile/JIT, phát triển bền vững trong vận hành</p>
+              <p><strong>Marketing Hiện đại:</strong> chiến lược marketing số, chiến lược đa kênh, phân khúc thị trường, CRM, hành vi người tiêu dùng, vòng đời khách hàng</p>
+              <p><strong>Quản lý Con người và Tổ chức:</strong> chiến lược HRM, văn hóa tổ chức, lý thuyết động lực, phong cách lãnh đạo, quản lý nhân sự</p>
+              <p><strong>Quản lý Tài chính:</strong> báo cáo tài chính, phân tích tỷ số, phân tích chi phí–lợi nhuận, lập ngân sách, thẩm định đầu tư (NPV, IRR)</p>
+              <p><strong>Quản lý Rủi ro:</strong> ERM, ma trận đánh giá rủi ro, khung ISO 31000, rủi ro vận hành và chiến lược, rủi ro chuỗi cung ứng</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Miami Master -->
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3.33 1.67 8.67 1.67 12 0v-5"/></svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-card-title">Thạc sĩ Phân tích Kinh doanh</div>
+              <div class="timeline-card-date">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Tháng 08/2023 – Tháng 05/2024
+              </div>
+            </div>
+            <span class="timeline-card-org">Đại học Miami, Hoa Kỳ</span>
+            <ul class="timeline-card-edu-scholarship">
+              <li>Danh sách Hiệu trưởng – Dean's List (Học kỳ Thu 2023)</li>
+              <li>Học bổng Giáo dục Quốc tế (2023 – 2024)</li>
+              <li>Học bổng RedHawk Excellence (2023 – 2024)</li>
+            </ul>
+            <button class="timeline-card-toggle" onclick="toggleCard(this)">
+              <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
+              Xem các môn học
+            </button>
+            <div class="edu-panel">
+              <p><strong>Kho dữ liệu và Trí tuệ Kinh doanh (BI):</strong> kiến trúc kho dữ liệu, quy trình ETL, mô hình hóa chiều (star/snowflake schema), công cụ BI</p>
+              <p><strong>Dữ liệu lớn (Big Data):</strong> tích hợp dữ liệu quy mô lớn, điện toán phân tán, pipeline Python/SQL, kỹ thuật đặc trưng</p>
+              <p><strong>Khai phá dữ liệu trong Kinh doanh:</strong> phân loại, phân cụm, đánh giá mô hình, SMOTE, xác nhận chéo</p>
+              <p><strong>Học máy (Machine Learning):</strong> thuật toán ML, triển khai trong môi trường tổ chức, phương pháp ensemble, mạng nơ-ron, khả năng diễn giải mô hình</p>
+              <p><strong>Phân tích Dữ liệu lớn và AI:</strong> NLP, nền tảng học sâu, ứng dụng LLM, AI trên đám mây, phát triển chatbot/AI hội thoại</p>
+              <p><strong>Truyền đạt bằng Dữ liệu:</strong> kể chuyện bằng dữ liệu, EDA, trực quan hóa Python/R, báo cáo cấp điều hành, dashboard</p>
+              <p><strong>Thiết kế Thực nghiệm và Phương pháp Nhân quả:</strong> kiểm định A/B, ghép điểm xu hướng, suy luận nhân quả, sai biệt kép</p>
+              <p><strong>Mô hình hóa Hệ thống và Tối ưu hóa:</strong> lập trình tuyến tính, mô hình hóa quyết định, phân tích độ nhạy</p>
+              <p><strong>Phân tích Dự báo:</strong> mô hình hóa tối ưu, hệ thống hỗ trợ quyết định, mô phỏng</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Miami Bachelor -->
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3.33 1.67 8.67 1.67 12 0v-5"/></svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-card-title">Cử nhân Khoa học Dữ liệu và Thống kê</div>
+              <div class="timeline-card-date">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Tháng 08/2020 – Tháng 01/2024
+              </div>
+            </div>
+            <span class="timeline-card-org">Đại học Miami, Hoa Kỳ</span>
+            <ul class="timeline-card-edu-scholarship">
+              <li>Danh sách Hiệu trưởng – Dean's List (Học kỳ Xuân 2022)</li>
+              <li>Học bổng Giáo dục Quốc tế (2020 – 2024)</li>
+              <li>Học bổng RedHawk Excellence (2020 – 2024)</li>
+              <li>Giải Viết văn tiếng Anh (2021): Bài luận <em>"Thờ cúng tổ tiên trong văn hóa châu Á: Tín ngưỡng hay mê tín?"</em> được đăng trong tạp chí <em>Rhethawks</em>, ấn phẩm viết học thuật chính thức của Khoa Văn học Anh.</li>
+            </ul>
+            <button class="timeline-card-toggle" onclick="toggleCard(this)">
+              <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
+              Xem các môn học
+            </button>
+            <div class="edu-panel">
+              <p><strong>Nền tảng Lập trình:</strong> OOP, Java, trừu tượng hóa dữ liệu, cấu trúc dữ liệu, lập trình ứng dụng web, tư duy thuật toán</p>
+              <p><strong>Hệ thống Cơ sở dữ liệu:</strong> cơ sở dữ liệu quan hệ, SQL, thiết kế lược đồ, tối ưu hóa truy vấn</p>
+              <p><strong>Lập trình Thống kê:</strong> R/SAS, mô phỏng Monte Carlo, kiểm định ngẫu nhiên hóa, điện toán thống kê</p>
+              <p><strong>Học thống kê:</strong> học có giám sát/không giám sát, lựa chọn mô hình, quá khớp/chính quy hóa</p>
+              <p><strong>Xác suất:</strong> định lý Bayes, phân phối mẫu, hàm tạo moment</p>
+              <p><strong>Thống kê Bayes:</strong> phân phối tiền nghiệm/hậu nghiệm, mô hình xác suất, khái niệm MCMC</p>
+              <p><strong>Thống kê Suy luận:</strong> lý thuyết ước lượng, kiểm định giả thuyết, phân phối chi-square và F</p>
+              <p><strong>Dự báo:</strong> phân tích chuỗi thời gian, làm trơn mũ, ARIMA, đánh giá mô hình</p>
+              <p><strong>Phân tích Hồi quy:</strong> kiểm định F riêng phần, phân tích phần dư, tỷ số odds, lựa chọn biến</p>
+              <p><strong>Thiết kế Thực nghiệm:</strong> thử nghiệm ngẫu nhiên có kiểm soát, thiết kế nhân tố, chặn, so sánh từng cặp</p>
+              <p><strong>Kinh tế học:</strong> kinh tế lượng ứng dụng, kinh tế vi/vĩ mô, cấu trúc thị trường, chính sách tài khóa/tiền tệ</p>
+              <p><strong>Kế toán Tài chính:</strong> báo cáo tài chính, phân tích chi phí, hỗ trợ ra quyết định quản lý</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foreign Trade -->
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3.33 1.67 8.67 1.67 12 0v-5"/></svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-card-title">Sinh viên Trao đổi (Chương trình Quốc tế)</div>
+              <div class="timeline-card-date">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Tháng 08/2020 – Tháng 12/2020
+              </div>
+            </div>
+            <span class="timeline-card-org">Trường Đại học Ngoại Thương (Cơ sở II), TP. Hồ Chí Minh, Việt Nam</span>
+            <button class="timeline-card-toggle" onclick="toggleCard(this)">
+              <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
+              Xem chi tiết
+            </button>
+            <div class="edu-panel">
+              <p>Tham gia chương trình trao đổi của Đại học Miami tại Đại học Ngoại Thương (FTU) Cơ sở II trong thời kỳ đại dịch COVID-19.</p>
+              <p>Hoàn thành các môn học trực tiếp <strong>Kinh tế vi mô</strong> và <strong>Kinh tế vĩ mô</strong> tại FTU song song với việc học trực tuyến toàn thời gian tại Đại học Miami.</p>
+              <p>
+                <strong>Hoạt động:</strong> Diễn giả Khách mời tại hội thảo "Chia sẻ kinh nghiệm học tập hiệu quả trong môi trường quốc tế".
+                <a href="vi_leadership.html" style="display: inline-block; margin-left: 8px; font-size: 12px; color: var(--text-light); text-decoration: underline; white-space: nowrap;">Xem tại trang Lãnh đạo →</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- HNAMS -->
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3.33 1.67 8.67 1.67 12 0v-5"/></svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-card-title">Bằng tốt nghiệp Trung học Phổ thông</div>
+              <div class="timeline-card-date">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Tháng 08/2017 – Tháng 05/2020
+              </div>
+            </div>
+            <span class="timeline-card-org">Trường THPT Chuyên Hà Nội – Amsterdam, Hà Nội, Việt Nam</span>
+            <ul class="timeline-card-edu-scholarship">
+              <li>Chuyên ban: Toán học</li>
+            </ul>
+            <button class="timeline-card-toggle" onclick="toggleCard(this)">
+              <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
+              Xem các giải thưởng
+            </button>
+            <div class="edu-panel">
+              <ul class="award-list">
+                <li>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Giải Ba</strong>, Kỳ thi Học sinh giỏi Thành phố Hà Nội</div>
+                    <div class="award-item-date">Tháng 03/2020</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Giải Khuyến khích</strong>, <a href="https://www.facebook.com/toanmohinh.hanoi/" target="_blank">Cuộc thi Toán mô hình Hà Nội</a></div>
+                    <div class="award-item-date">Tháng 08/2019</div>
+                  </div>
+                  <div class="award-item-detail">Cuộc thi 3 ngày thường niên do Hội Ứng dụng Toán học Việt Nam tổ chức, thu hút 25 đội (100 thí sinh) từ Hà Nội để giải quyết các bài toán thực tiễn bằng mô hình toán học.</div>
+                </li>
+                <li>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Giải Ghi nhận</strong>, <a href="https://www.immchallenge.org/Index.html" target="_blank">Cuộc thi Mô hình Toán học Quốc tế lần thứ 5 (IM²C)</a></div>
+                    <div class="award-item-date">Tháng 03 – 05/2019</div>
+                  </div>
+                  <div class="award-item-detail">Cuộc thi được tổ chức bởi COMAP và NeoUnion ESC Organization tại Hồng Kông. Chủ đề: "Sức tải của Trái Đất". 57 đội từ 33 quốc gia/vùng lãnh thổ tham gia vòng quốc tế.</div>
+                </li>
+                <li>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Huy chương Bạc</strong>, <a href="https://www.facebook.com/InternationalTalentMathematicsContest" target="_blank">Cuộc thi Tài năng Toán học Quốc tế (ITMC)</a>, Bangkok, Thái Lan</div>
+                    <div class="award-item-date">Tháng 02/2019</div>
+                  </div>
+                  <div class="award-item-detail">Gần 1.000 học sinh từ 10 quốc gia tham dự.</div>
+                </li>
+                <li>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Giải Ba</strong>, Vòng Đông kỳ 6 của Giải Toán học Quốc tế "Toán Không Biên giới"</div>
+                    <div class="award-item-date">Tháng 02/2019</div>
+                  </div>
+                  <div class="award-item-detail">Cuộc thi Toán học dành cho học sinh từ lớp 6 đến lớp 12 với 4 vòng (Xuân, Hè, Thu, Đông). 250 thí sinh từ các độ tuổi tham dự vòng Đông.</div>
+                </li>
+                <li>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Giải Ba</strong>, Kỳ thi Học sinh giỏi Thành phố Hà Nội</div>
+                    <div class="award-item-date">Tháng 12/2018</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Đại sứ Ams</strong>, <a href="https://hn-ams.edu.vn/content/tan-ai-su-ams-2018-vu-nam-trang-linh-nu-sinh-chuyen-toan-xinh-ep-va-tai-nang" target="_blank">Trường THPT Chuyên Hà Nội – Amsterdam</a></div>
+                    <div class="award-item-date">2018 – 2019</div>
+                  </div>
+                  <div class="award-item-detail"><a href="https://www.facebook.com/ngayhoianhtai18/" target="_blank">Ngày Hội Anh Tài</a> là chuỗi sự kiện học sinh thường niên diễn ra từ tháng 3 đến tháng 9. Tôi được chọn làm đại sứ học sinh của trường dựa trên thành tích học tập, tài năng cá nhân và hoạt động ngoại khóa qua 5 vòng: hồ sơ, phỏng vấn, chụp ảnh nghệ thuật và bình chọn trực tuyến, trình diễn tài năng, và đêm chung kết (trang phục dạ hội, áo dài dân tộc, và phần thi ứng xử cho 3 thí sinh vào chung kết).</div>
+                </li>
+                <li>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Giải Vàng</strong>, Hội nghị Lãnh đạo Học sinh Châu Á (ASLC), Singapore</div>
+                    <div class="award-item-date">Tháng 07/2018</div>
+                  </div>
+                  <div class="award-item-detail">Hội nghị thường niên do <a href="https://www.facebook.com/SGYouthAmbassadors" target="_blank">Youth Ambassadors</a> và <a href="https://www.nyc.gov.sg" target="_blank">Hội đồng Thanh niên Quốc gia Singapore (NYC)</a> tổ chức, thu hút 260 người tham dự từ 10 quốc gia châu Á năm 2018.</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Archimedes -->
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5-10-5z"/><path d="M6 12v5c3.33 1.67 8.67 1.67 12 0v-5"/></svg>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-card-header">
+              <div class="timeline-card-title">Bằng tốt nghiệp Trung học Cơ sở</div>
+              <div class="timeline-card-date">
+                <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Tháng 08/2013 – Tháng 05/2017
+              </div>
+            </div>
+            <span class="timeline-card-org">Trường THCS Archimedes Academy, Hà Nội, Việt Nam</span>
+            <button class="timeline-card-toggle" onclick="toggleCard(this)">
+              <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
+              Xem các giải thưởng
+            </button>
+            <div class="edu-panel">
+              <ul class="award-list">
+                <li>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Giải Nhì</strong>, Kỳ thi Học sinh giỏi lớp 9 Thành phố Hà Nội (Môn: Toán học)</div>
+                    <div class="award-item-date">Tháng 05/2017</div>
+                  </div>
+                  <div class="award-item-detail">Học sinh lớp 9 toàn thành phố thi 1 trong 13 môn gồm Toán, Văn, Sử, Hóa, Lý. Có 166 học sinh dự thi phần Toán năm học 2016 – 2017.</div>
+                </li>
+                <li>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Huy chương Bạc</strong>, <a href="https://cmseducation.org/iymc/" target="_blank">Hội nghị Nhà Toán học trẻ Quốc tế (IYMC)</a>, Ấn Độ</div>
+                    <div class="award-item-date">2016</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Huy chương Đồng</strong>, Kỳ thi Toán học Mở Hà Nội (HOMC)</div>
+                    <div class="award-item-date">2016</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="award-item">
+                    <div class="award-item-title"><strong>Huy chương Vàng</strong>, Cuộc thi Toán học Quốc tế (IMC), Singapore</div>
+                    <div class="award-item-date">2015</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KỸ NĂNG -->
+<section class="section" id="skills">
+  <div class="section-inner">
+    <div class="section-label-wrap reveal"><div class="section-label">Kỹ năng</div></div>
+    <div class="section-content reveal">
+      <div class="skills-two-col">
+        <div>
+          <div class="skills-col-head">Kỹ năng Chuyên môn và Chuyển đổi</div>
+          <div class="skills-group"><div class="skills-group-title">Tư duy Nghiên cứu &amp; Học thuật</div><div class="skills-category-desc">Tư duy phản biện &amp; lý luận phân tích; học tập độc lập và tự định hướng; tư duy liên ngành (kết nối thống kê, kinh doanh và vận hành); viết học thuật và chuyên nghiệp; truyền thông khoa học</div></div>
+          <div class="skills-group"><div class="skills-group-title">Giao tiếp &amp; Cộng tác</div><div class="skills-category-desc">Làm việc nhóm đa ngành trong các dự án; viết chuyên nghiệp cho nhiều đối tượng khác nhau</div></div>
+          <div class="skills-group"><div class="skills-group-title">Hướng dẫn &amp; Cố vấn</div><div class="skills-category-desc">Kèm cặp và cố vấn học thuật 1-1; phản hồi cá nhân hóa và đánh giá hình thành</div></div>
+          <div class="skills-group"><div class="skills-group-title">Tổ chức &amp; Tự quản lý</div><div class="skills-category-desc">Quản lý dự án độc lập; xử lý các cam kết học thuật song song tại nhiều cơ sở và múi giờ; quản lý thời hạn trong môi trường áp lực cao</div></div>
+          <div class="skills-group"><div class="skills-group-title">Năng lực Đa văn hóa &amp; Toàn cầu</div><div class="skills-category-desc">Hiểu biết về môi trường học thuật và chuyên nghiệp tại Việt Nam, Hoa Kỳ và Vương quốc Anh; giao tiếp song ngữ (Việt/Anh)</div></div>
+        </div>
+        <div>
+          <div class="skills-col-head">Kỹ năng Kỹ thuật và Nghiên cứu</div>
+          <div class="skills-group"><div class="skills-group-title">Lập trình &amp; Dữ liệu</div><div class="skills-category-desc">Python (Pandas, NumPy, scikit-learn, TensorFlow/Keras, Matplotlib, Seaborn, Plotly), Streamlit, R (tidyverse, ggplot2, GAM/mgcv, caret), SAS, SQL</div></div>
+          <div class="skills-group"><div class="skills-group-title">Kỹ thuật Dữ liệu &amp; Điện toán Đám mây</div><div class="skills-category-desc">MySQL, AWS (RDS, Lex, Lambda), Docker, SQLAlchemy, Octoparse, thiết kế pipeline ETL</div></div>
+          <div class="skills-group"><div class="skills-group-title">Trực quan hóa &amp; BI</div><div class="skills-category-desc">Power BI, Tableau, Plotly, Matplotlib/Seaborn, R Markdown, ggplot2, Jupyter Notebook</div></div>
+          <div class="skills-group"><div class="skills-group-title">Học máy</div><div class="skills-category-desc">Học có giám sát, không giám sát, phương pháp ensemble (random forest, XGBoost), học sâu (LSTM, mạng nơ-ron), hệ thống gợi ý (K-NN), đánh giá và triển khai mô hình</div></div>
+          <div class="skills-group"><div class="skills-group-title">Phương pháp Nghiên cứu</div><div class="skills-category-desc">Nghiên cứu định lượng và định tính, phỏng vấn bán cấu trúc, thiết kế khảo sát, tổng quan tài liệu hệ thống, viết học thuật, báo cáo chuyên đề</div></div>
+          <div class="skills-group"><div class="skills-group-title">Công cụ Văn phòng &amp; Tự động hóa</div><div class="skills-category-desc">Microsoft 365, WordPress, Power Platform (Power Apps, Power Automate), điều phối cuộc họp, quản lý tài liệu dự án</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NGÔN NGỮ -->
+<section class="section" id="languages">
+  <div class="section-inner">
+    <div class="section-label-wrap reveal"><div class="section-label">Ngôn ngữ</div></div>
+    <div class="section-content reveal">
+      <div class="lang-list">
+        <div class="lang-item">
+          <div class="lang-donut"><svg viewBox="0 0 80 80"><circle class="track" cx="40" cy="40" r="33"/><circle class="fill" cx="40" cy="40" r="33" stroke-dasharray="207.3 0" stroke-dashoffset="0"/></svg><div class="lang-donut-pct">100%</div></div>
+          <div class="lang-name">Tiếng Anh</div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-donut"><svg viewBox="0 0 80 80"><circle class="track" cx="40" cy="40" r="33"/><circle class="fill" cx="40" cy="40" r="33" stroke-dasharray="207.3 0" stroke-dashoffset="0"/></svg><div class="lang-donut-pct">100%</div></div>
+          <div class="lang-name">Tiếng Việt</div>
+        </div>
+        <div class="lang-item">
+          <div class="lang-donut"><svg viewBox="0 0 80 80"><circle class="track" cx="40" cy="40" r="33"/><circle class="fill" cx="40" cy="40" r="33" stroke-dasharray="41.5 165.8" stroke-dashoffset="0"/></svg><div class="lang-donut-pct">20%</div></div>
+          <div class="lang-name">Tiếng Trung</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="connect">
+  <div class="footer-title">Kết nối với tôi</div>
+  <div class="footer-name">Linh Vu</div>
+  <div class="footer-email"><a href="mailto:linh.nt.vuu@gmail.com">linh.nt.vuu@gmail.com</a></div>
+  <div class="footer-label">Theo dõi tôi trên</div>
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/linhvu11/" target="_blank" class="social-link" title="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+    <a href="https://www.facebook.com/linhbong115" target="_blank" class="social-link" title="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+    <a href="https://medium.com/@linhvu.nt" target="_blank" class="social-link" title="Medium"><svg viewBox="0 0 24 24"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg></a>
+    <a href="https://github.com/linhvu11" target="_blank" class="social-link" title="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+  </div>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>
